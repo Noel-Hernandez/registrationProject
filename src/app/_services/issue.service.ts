@@ -7,11 +7,11 @@ import { environment } from '@environments/environment';
 import { Issue } from '@app/_models/issue.model';
 
 @Injectable({ providedIn: 'root' })
-export class AccountService {
+export class AccountServicee {
     private userSubject: BehaviorSubject<Issue>;
     public issue: Observable<Issue>;
 
-    constructor(
+    constructor( 
         private router: Router,
         private http: HttpClient
     ) {
@@ -40,7 +40,9 @@ export class AccountService {
         this.router.navigate(['/account/login']);
     }
 
-
+    AddIssue(issue: Issue) {
+        return this.http.post(`${environment.apiUrl}/users/register`, issue);
+    }
     getAll() {
         return this.http.get<Issue[]>(`${environment.apiUrl}/users`);
     }
