@@ -41,7 +41,7 @@ export class AccountServicee {
     }
 
     AddIssue(issue: Issue) {
-        return this.http.post(`${environment.apiUrl}/users/register`, issue);
+        return this.http.post(`${environment.apiUrl}/users/post`, issue);
     }
     getAll() {
         return this.http.get<Issue[]>(`${environment.apiUrl}/users`);

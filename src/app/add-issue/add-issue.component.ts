@@ -29,7 +29,7 @@ export class AddIssueComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addStudent() {
+  addIssue() {
 
     if (!this.issueForm.valid) {
       return;
