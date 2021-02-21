@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { IssueListComponent } from './issue-list/issue-list.component';
 import { HomeComponent } from './home';
 import { AuthGuard } from './_helpers';
 import {MatTableModule} from '@angular/material/table';
@@ -14,6 +14,7 @@ const routes: Routes = [
     { path: 'account', loadChildren: accountModule },
     {path: 'add_issue', component:AddIssueComponent},
     {path :'issue', component:AddIssueComponent},
+    {path : 'issue-list',component:IssueListComponent},
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
