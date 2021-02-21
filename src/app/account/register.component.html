@@ -59,6 +59,16 @@
                     <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
                 </div>
             </div>
+            <div class="checkboxes">
+                <input type="checkbox" ng-checked="all"><label>Telefonia</label>
+                <input type="checkbox" ng-checked="all"><label>Internet</label>
+                <input type="checkbox" ng-checked="all"><label>Cable</label>         
+            </div>
+
+
+
+
+
             <div class="form-group">
                 <button [disabled]="loading" class="btn btn-primary">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>

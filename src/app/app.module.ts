@@ -15,13 +15,15 @@ import { IssueListComponent } from './issue-list/issue-list.component'
 ;
 import { IssueDetailComponent } from './issue-detail/issue-detail.component'
 ;
-import { AddIssueComponent } from './add-issue/add-issue.component';
+import { AddIssueComponent } from './add-issue/add-issue.component';;
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        AppRoutingModule
+        AppRoutingModule,
+        BrowserAnimationsModule
     ],
     
     declarations: [
